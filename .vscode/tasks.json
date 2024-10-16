@@ -9,7 +9,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lpaho-mqtt3c"
             ],
             "options": {
                 "cwd": "${fileDirname}"
